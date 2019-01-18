@@ -1,4 +1,6 @@
+/* eslint-disable no-restricted-globals */
 import React, { Component } from 'react';
+import $ from 'jquery';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import About from './components/About';
@@ -23,5 +25,5 @@ class App extends Component {
     );
   }
 }
-    
+
 export default App;

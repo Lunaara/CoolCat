@@ -1,21 +1,65 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Contact extends Component {
   render() {
     return (
-      <section id="about" class="about-section text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-              <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on<a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+      <section className="contact-section bg-black">
+        <div className="container">
+
+          <div className="row">
+
+            <div className="col-md-4 mb-3 mb-md-0">
+              <div className="card py-4 h-100">
+                <div className="card-body text-center">
+                  <i className="fas fa-map-marked-alt text-primary mb-2"></i>
+                  <h4 className="text-uppercase m-0">Address</h4>
+                  <hr className="my-4" />
+                  <div className="small text-black-50">4923 Market Street, Orlando FL</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 mb-3 mb-md-0">
+              <div className="card py-4 h-100">
+                <div className="card-body text-center">
+                  <i className="fas fa-envelope text-primary mb-2"></i>
+                  <h4 className="text-uppercase m-0">Email</h4>
+                  <hr className="my-4" />
+                  <div className="small text-black-50">
+                    <a href="#home">hello@yourdomain.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 mb-3 mb-md-0">
+              <div className="card py-4 h-100">
+                <div className="card-body text-center">
+                  <i className="fas fa-mobile-alt text-primary mb-2"></i>
+                  <h4 className="text-uppercase m-0">Phone</h4>
+                  <hr className="my-4" />
+                  <div className="small text-black-50">+1 (555) 902-8832</div>
+                </div>
+              </div>
             </div>
           </div>
-          <img src="img/ipad.png" class="img-fluid" alt="" />
+
+          <div className="social d-flex justify-content-center">
+            <a href="#home" className="mx-2">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#home" className="mx-2">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#home" className="mx-2">
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
+
         </div>
       </section>
     )
   }
 }
 
-export default About;
+export default Contact;
